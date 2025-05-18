@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Deisy</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Deisy Viviana Ruiz Ochoa </h1>
+            <h2>Ingeniera de Sistemas - UI/UX Designer</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/deisy-viviana-ruiz-ochoa/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/dayzi999"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:deisytripulante@gmail.com?subject=Interesado%20en%20tu%20trabajo&body=Hola%2C%20he%20visto%20tu%20portafolio%20y%20me%20gustaría%20conversar%20sobre%20una%20posible%20colaboración%20o%20proyecto.%20Quedo%20atento%2Fa%20a%20tu%20respuesta.%0A%0ASaludos%2C">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+            
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Deisy Ruiz.</span> Ingeniera en Sistemas con enfoque en desarrollo web 
+                y diseño centrado en el usuario. Me especializo en construir interfaces intuitivas, 
+                funcionales y visualmente atractivas. Mi enfoque combina la lógica del desarrollo frontend 
+                con los principios de UX/UI para mejorar la experiencia del usuario en productos digitales. 
+                Busco formar parte de equipos colaborativos donde pueda seguir creciendo y aportar con soluciones innovadoras.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-12-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+57) 312 614 9887
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            deisytripulante@gmail.com
+                        </li>                    
+                        <li>
+                            <strong>Dirección</strong>
+                            Colombia, Tuluá (Valle del Cauca)
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section id="sobremi" class="sobremi" style="background-color: #252A2E;justify-content: center; align-items: center;">
+        <div class="contenido-seccion" style="justify-content: center; align-items: center;">
+            
+
+            <div class="fila" style="justify-content: center; align-items: center;">
+                <!-- datos personales -->
+                
+
+                <!-- intereses -->
+                <div class="col">
+                    <h2>Skills</h2>
+                    <div class="contenedor-intereses" style="justify-content: center; align-items: center;">
+                        <div class="interes">
+                            <i class="fa-brands fa-angular"></i>
+                            <span>ANGULAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-react"></i>
+                            <span>REACT</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-vuejs"></i>
+                            <span>VUE.JS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-brands fa-figma"></i>                            
+                            <span>FIGMA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GITHUB</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-html5"></i>                            
+                            <span>HTML5</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-css3-alt"></i>                          
+                            <span>CSS3</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria de Sistemas</h4>
+                        <span class="casa">Universidad del Vale</span>
+                        <span class="fecha">2020 - Actualidad</span>
+                        <p>Carrera enfocada en el desarrollo de habilidades en programación, arquitectura de software, bases de datos, redes, inteligencia artificial 
+                            y gestión de proyectos tecnológicos. Durante mi formación he adquirido conocimientos teóricos y prácticos que me han permitido desarrollar
+                             soluciones informáticas eficientes y centradas en el usuario.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>HTML, CSS, React - Certification Course for Beginners</h4>
+                        <span class="casa">Udemy </span>
+                        <span class="fecha">Septiembre 2024</span>
+                        <p>Curso práctico orientado al desarrollo frontend con tecnologías clave como HTML5, CSS3 y React. Aprendí a construir interfaces web responsivas, 
+                            estructuradas y dinámicas, aplicando buenas prácticas de diseño y programación moderna.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Google UX Design</h4>
+                        <span class="casa">Coursera</span>
+                        <span class="fecha">Enero 2025</span>
+                        <p>Certificación profesional ofrecida por Google, centrada en el diseño de experiencias de usuario. Aprendí sobre investigación de usuarios, creación 
+                            de wireframes y prototipos en herramientas como Figma, pruebas de usabilidad y principios de diseño centrado en el ser humano. Ideal para complementar
+                             mis habilidades técnicas con un enfoque sólido en UX/UI.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrolladora Frontend</h4>
+                        <span class="casa">Contento Latam </span>
+                        <span class="fecha">Enero 2024 - Diciembre 2024</span>
+                        <p>Responsable activamente en el diseño y desarrollo de múltiples sitios web para diferentes tiendas en línea, enfocados en la experiencia 
+                            del usuario y optimización de rendimiento.</p>
+                        <span class="casa" style="margin-top: 10px;font-size: 18px;">Responsabilidades y logros</span>
+                        <ul style="margin-left: 30px;">
+                            <li>Creación de interfaces responsivas con Vue.js, JavaScript y HTML/CSS.</li>
+                            <li>Diseño y maquetación de sitios web personalizados para marcas, priorizando usabilidad y estética.</li>
+                            <li>Optimización del rendimiento del frontend y tiempos de carga.</li>
+                            <li>Integración de diseño UX/UI con las necesidades del negocio.</li>
+                            <li>Colaboración con equipos de backend y diseño en ambientes Scrum.</li>
+                          </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrolladora Frontend</h4>
+                        <span class="casa">XIII Encuentro Departamental de Semilleros de Investigación</span>
+                        <span class="fecha">Mayo 2024 - Junio 2024</span>
+                        <p>Participé en el desarrollo de un proyecto de robótica enfocado en la creación de un partido de fútbol con robots controlados a través de una 
+                            aplicación móvil. El objetivo era permitir a los usuarios manejar carros robot equipados con sensores a través de una conexión Bluetooth. </p>
+                            <span class="casa" style="margin-top: 10px;font-size: 18px;">Responsabilidades y logros</span>
+                        <ul style="margin-left: 30px;">
+                            <li>Liderar el diseño de la interfaz de usuario para una aplicación móvil, priorizar la claridad visual y la usabilidad para asegurar una experiencia intuitiva y fluida.</li>
+                            <li>Implementé y optimicé la comunicación en la aplicación, garantizando que los usuarios pudieran conectar y controlar los robots de forma rápida y estable, incluso en
+                                 situaciones de alto tráfico de dispositivos. Esta mejora resultó en una experiencia de usuario más satisfactoria.</li>
+                            <li>Trabajé estrechamente con el equipo de robótica y los desarrolladores para asegurar que la interfaz gráfica de la aplicación cumpliera con los requisitos de funcionalidad del hardware. </li>                          
+                          </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+    
+                <a href="https://jacaranda.contento.tienda/" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tienda</h3>
+                            <p>Accesorios</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="https://machefoodie.contento.tienda/" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    <div class="proyecto">
+                        <img src="img/p2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tienda</h3>
+                            <p>Mezcla de Pancakes</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="https://americanlive.co/" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    <div class="proyecto">
+                        <img src="img/p3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tienda</h3>
+                            <p>Zapatos</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="https://altagraciabling.contento.tienda/" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    <div class="proyecto">
+                        <img src="img/p4.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tienda</h3>
+                            <p>Accesorios</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="https://deamar.co/" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    <div class="proyecto">
+                        <img src="img/p5.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tienda</h3>
+                            <p>Accesorios</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="https://comproenmitierra.com/" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    <div class="proyecto">
+                        <img src="img/p6.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tienda</h3>
+                            <p>Centro Comercial Buga</p>
+                        </div>
+                    </div>
+                </a>
+    
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info" style="font-size: 14px;">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia, Tuluá
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                (+57) 312 614 9887
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                deisytripulante@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
