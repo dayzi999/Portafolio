@@ -90,14 +90,16 @@
                 
             </div>
             <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
+                <a href="img/cv.pdf" download class="download-btn" target="_blank" style="text-decoration: none; color: inherit; display: inline-block;">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
             </button>
         </div>
     </section>
 
     <!-- SECCION SKILLS -->
-    <section id="sobremi" class="sobremi" style="background-color: #252A2E;justify-content: center; align-items: center;">
+    <section id="skills" class="sobremi" style="background-color: #252A2E;justify-content: center; align-items: center;">
         <div class="contenido-seccion" style="justify-content: center; align-items: center;">
             
 
@@ -309,19 +311,29 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form action="https://formsubmit.co/deisytripulante@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                        <input type="text" name="phone" placeholder="Número telefónico" required>
+                        <input type="email" name="email" placeholder="Dirección de correo" required>
+                        <input type="text" name="subject" placeholder="Tema" required>
+                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+    
+                        <!-- Evita el captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Redirige a una página de gracias luego del envío (opcional) -->
+                        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+    
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
-                <!-- Mapa -->
+    
+                <!-- Mapa o Información -->
                 <div class="col">
-                    <img src="img/ubicacion.png" alt="">
+                    <img src="img/ubicacion.png" alt="Mapa de ubicación">
                     <div class="info" style="font-size: 14px;">
                         <ul>
                             <li>
@@ -349,11 +361,13 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://www.linkedin.com/in/deisy-viviana-ruiz-ochoa/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/dayzi999"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:deisytripulante@gmail.com?subject=Interesado%20en%20tu%20trabajo&body=Hola%2C%20he%20visto%20tu%20portafolio%20y%20me%20gustaría%20conversar%20sobre%20una%20posible%20colaboración%20o%20proyecto.%20Quedo%20atento%2Fa%20a%20tu%20respuesta.%0A%0ASaludos%2C">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+        
+            
         </div>
     </footer>
 
